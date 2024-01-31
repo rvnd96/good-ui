@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,53 @@
     <style>
         section {
             margin: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid red;
         }
+
         .image-wrapper {
             width: 200px;
         }
+
+        @media only screen and (max-width: 767.9px) {
+            .image-wrapper {
+                width: 100%;
+            }
+        }
+
         .image-wrapper img {
             width: 100%;
         }
+
         .box-warpper {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
+
         .box-warpper .box {
             width: 200px;
             height: 200px;
             background-color: #007bff;
         }
+
         .box-warpper .box:nth-child(odd) {
             background-color: brown;
         }
     </style>
 </head>
+
 <body>
 
     <section>
-        <h1>The Image is now Responsive</h1>
+        <h1>The image is responsive.</h1>
         <div class="image-wrapper">
             <img src="images/goodui.jpeg" alt="good ui">
         </div>
         <hr>
-        <h1>Following boxes should be Responsive and size is: 200px x 200px</h1>
+        <h1>Boxes are responsive.</h1>
         <div class="box-warpper">
             <div class="box"></div>
             <div class="box"></div>
@@ -53,4 +70,5 @@
     </section>
 
 </body>
+
 </html>
