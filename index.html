@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Wayne's Non-Responsive Boxes</title>
+    <title>GOOD Website</title>
     <style>
         section {
             margin: 24px;
@@ -11,9 +11,13 @@
         .image-wrapper {
             width: 200px;
         }
+        .image-wrapper img {
+            width: 100%;
+        }
         .box-warpper {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .box-warpper .box {
             width: 200px;
@@ -28,6 +32,7 @@
 <body>
 
     <section>
+        <h1>The Image is now Responsive</h1>
         <div class="image-wrapper">
             <img src="images/goodui.jpeg" alt="good ui">
         </div>
